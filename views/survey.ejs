@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Survey App</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="text-center my-5">
+            <h1>Creating a Survey</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card card-body">
+                    <form action="/poll/createpoll" method="POST">
+                        <div class="form-group">
+                            <label for="title">Enter Survey Title</label>
+                            <input name="title" class="form-control" id="title" type="text" placeholder="Enter Title" aria-label="default input example">
+                        </div>
+                        <div class="form-group">
+                            <label for="option1">Option 1</label>
+                            <input name="option1" class="form-control w-50" id="option1" type="text" placeholder="Enter Option 1" aria-label="default input example">
+                        </div>
+                        <div class="form-group">
+                            <label for="option2">Option 2</label>
+                            <input name="option2" class="form-control w-50" id="option2" type="text" placeholder="Enter Option 2" aria-label="default input example">
+                        </div>
+                        <div class="form-group">
+                            <label for="option3">Option 3</label>
+                            <input name="option3" class="form-control w-50" id="option3" type="text" placeholder="Enter Option 3" aria-label="default input example">
+                        </div>
+                        <div class="form-group">
+                            <label for="option4">Option 4</label>
+                            <input name="option4" class="form-control w-50" id="option4" type="text" placeholder="Enter Option 4" aria-label="default input example">
+                        </div>
+                        <div class="my-3">
+                            <input type="submit" class="btn btn-primary" value="Create"></input>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
