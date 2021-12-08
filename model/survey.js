@@ -10,7 +10,8 @@ const surveySchema = new Schema ({
     option1 : {
         type: String,
         required: true,
-        trim: true
+        trim: true,
+        default: 0
     },
     option2 : {
         type: String,

@@ -21,8 +21,9 @@ app.get('/survey', (req, res) => {
     res.render('survey.ejs');
 })
 
-app.use('/poll', surveyHandler);
-// app.get('/polls', surveyHandler.getAllPolls)
+app.use('/create', surveyHandler.postASurvey);
+app.use('/allpoll', surveyHandler.getAllSurvey);
+// app.use('/surveys/:id', surveyHandler.submitASurvey)
 // app.use('/showall', surveyHandler);
 
 mongoose.connect('mongodb://localhost:27017/express-survey', () => {
